@@ -1,0 +1,189 @@
+/** Font Family **/
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700);
+
+/*!---------------------------------------------------*/
+
+
+/** Style for Icons **/
+
+@font-face {
+    font-family: 'ElegantIcons';
+    src: url('../Resources/icons/fonts/ElegantIcons.eot');
+    src: url('../Resources/icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../Resources/icons/fonts/ElegantIcons.woff') format('woff'), url('../Resources/icons/fonts/ElegantIcons.ttf') format('truetype'), url('../Resources/icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon_search,
+.icon_phone,
+.icon_mail {
+    font-family: 'ElegantIcons';
+    font-style: normal;
+    color: white;
+}
+
+.icon_search:before {
+    content: "\55";
+    font-size: 18px;
+}
+
+.icon_phone:before {
+    content: "\e090";
+    color: #1cc3b2;
+    font-size: 14px;
+    padding: 0px 5px 0px 0px;
+}
+
+.icon_mail:before {
+    content: "\e076";
+    color: #1cc3b2;
+    font-size: 14px;
+    padding: 0px 5px 0px 0px;
+}
+
+
+/*!---------------------------------------------------*/
+
+
+/** LOGO **/
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+}
+
+
+/*!---------------------------------------------------*/
+
+
+/** Body **/
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+}
+
+
+/*!---------------------------------------------------*/
+
+
+/** Header section **/
+
+.header {
+    width: 100%;
+    background-color: #1cc3b2;
+}
+
+
+/*? Search Bar ?*/
+
+.search-form {
+    /* max-width: 1200px; */
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 1140px;
+    /* width: 100%; */
+    margin: auto;
+    padding: 0px 15px;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.container>form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchInput {
+    background: transparent;
+    border: 0px;
+    width: 90%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.magnifier {
+    background: transparent;
+    border: 1px solid transparent;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+
+/*? Header Top ?*/
+
+.header-top {
+    /* max-width: 1200px; */
+    height: 50px;
+    margin: auto;
+    display: flex;
+    background-color: #0e2737;
+}
+
+.header-top>.container {
+    /* outline: 1px solid red; */
+    height: 50px;
+}
+
+.cont {
+    /* outline: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    /* outline: 1px solid red; */
+    width: 50%;
+}
+
+.header-top-cont {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.icons {
+    justify-content: end;
+    gap: 34.25px;
+}
+
+
+/*? Header menu ?*/
+
+.header-menu {
+    background-color: white;
+    height: 80px;
+}
+
+.header-menu>.container {
+    height: 80px;
+}
+
+.height-check {
+    height: 1000px;
+    background-color: black;
+}
