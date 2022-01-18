@@ -8,53 +8,110 @@
     <style>
         #footer{
             width: 100%;
-            height: 250px;
+            height: 300px;
             background-color: #0e2737;
             align-items: center;
-            margin: auto;
+
         }
         #contain{
             display: flex;
             color: white;
             width: 80%;
-            margin: auto;
+            margin: 0px 15%;
             padding-top: 80px;
         }
         #footer .container{
             width: 250px;
-            margin-left: 10px;
+
+            font-weight: bold;
         }
         .container > *{
-            margin: 5px;
+            margin: 3%;
         }
         .container>img{
-            width: 100px;
-            height: 30px;
+            width: 60%;
+            height: 20%;
         }
         #footer .last{
             margin: 0px;
         }
+        .teal{
+            color: #19bbad;
+            font-size: 120%;
+
+        }
+        .gap{
+            margin: 8px 8px;
+
+        }
+        .grey{
+            color: rgb(202, 200, 200);
+            font-weight: lighter;
+        }
+        .link{
+            margin-left: -15px;
+            margin-right: -50px;
+        }
+        .gap1{
+            margin-top: 9%;
+        }
+        .grey li{
+            margin-top: 6%;
+            list-style-type: none;
+            position: relative;
+            color: grey;
+        }
+        li:before {
+            content: "\25BA \0020";
+            font-size: 8px;
+            position: absolute;
+            top: 5px;
+            left: -10px;
+        }
+        #footer .inputF{
+            margin-top: 5%;
+            width: 100%;
+            height: 30px;
+            border-radius: 50px;
+            background-color: #7d8891;
+            padding-left: 10px;
+            color:rgb(199, 199, 199);
+        }
+        #footer .container form{
+            display: flex;
+        }
+        #footer .container form button{
+            border-radius: 50%;
+            width: 50px;
+            height: 30px;
+            margin-top: 6.5%;
+            margin-left: -23%;
+            background-color: #19bbad;
+            color: white;
+            border: teal;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section id="footer">
      <div id="contain">
         <div class="container">
             <img src="https://preview.colorlib.com/theme/roberto/img/core-img/xlogo2.png.pagespeed.ic.Co3EpLj0TJ.webp">
-            <h4>+12 345-678-9999</h4>
-            <p>Info.colorlib@gmail.com</p>
-            <p>856 Cordia Extension Apt. 356, Lake Deangeloburgh, South Africa</p>
+            <h4 class="teal">+12 345-678-9999</h4>
+            <p class="gap grey">Info.colorlib@gmail.com</p>
+            <p class="grey">856 Cordia Extension Apt. 356, Lake Deangeloburgh, South Africa</p>
         </div>
         <div class="container">
             <h3>Our Blog</h3>
-            <p>Freelance Design Tricks How</p>
-            <p> Jan 02, 2019</p>
-            <p>Free Advertising For Your Online</p>
-            <p> Jan 02, 2019</p>
+            <p class="gap1">Freelance Design Tricks How</p>
+            <p class="grey"> Jan 02, 2019</p>
+            <p class="gap1">Free Advertising For Your Online</p>
+            <p class="grey"> Jan 02, 2019</p>
         </div>
-        <div class="container">
-            <h3 style="margin-left:30px;">Links</h3>
-            <ul>
+        <div class="container link">
+            <h3 style="margin-left:35px;">Links</h3>
+            <ul class="grey">
             <li> About Us</li>
             <li> Our Room</li>
             <li> Career</li>
@@ -63,10 +120,10 @@
         </div>
         <div class="container last">
             <h3>Subscribe Newsletter</h3>
-            <p>Subscribe our newsletter gor get notification about new updates.</p>
+            <p class="grey gap1 ">Subscribe our newsletter gor get notification about new updates.</p>
             <form>
-            <input>
-            <button type="submit"></button>
+            <input value="Enter your email" class="inputF">
+            <button type="submit" class="fa">&#xf1d9;</button>
             </form>
         </div>
      </div>
