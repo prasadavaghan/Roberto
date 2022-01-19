@@ -51,6 +51,13 @@
     width: 11px;
 }
 
+.dropdown>.dropdown-cont>a>img {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+
 /*!---------------------------------------------------*/
 
 
@@ -60,6 +67,7 @@
     display: flex;
     align-items: center;
     padding-top: 2px;
+    cursor: pointer;
 }
 
 
@@ -103,7 +111,14 @@ body {
     align-items: center;
 }
 
-.search-form-active {
+.search-form>.container {
+    opacity: 0;
+    height: 0px;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in;
+}
+
+.search-form-active, .search-form-active>.container {
     height: 80px;
     opacity: 1;
 }
@@ -125,9 +140,10 @@ body {
 }
 
 #searchInput {
+    /* outline: 1px solid red; */
     background: transparent;
     border: 0px;
-    width: 90%;
+    width: 95%;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -135,6 +151,10 @@ body {
 }
 
 .magnifier {
+    /* outline: 1px solid red; */
+    width: 5%;
+    text-align: right;
+    cursor: pointer;
     background: transparent;
     border: 1px solid transparent;
     border-top: 0px;
@@ -182,9 +202,25 @@ body {
     font-size: 14px;
 }
 
+.box a span {
+    transition-duration: 500ms;
+}
+
+.box>.contact>a:hover>span {
+    opacity: 0.5;
+}
+
 .icons {
     justify-content: end;
     gap: 34.25px;
+}
+
+.icons>a {
+    transition-duration: 500ms;
+}
+
+.icons>a:hover {
+    color: #1cc3b2;
 }
 
 
@@ -249,6 +285,11 @@ body {
     text-transform: capitalize;
     color: #2a303b;
     font-weight: 500;
+    transition-duration: 500ms;
+}
+
+.navbar>#nav>li:hover>a {
+    color: #afb4bf;
 }
 
 /*? Drop down 1 ?*/
@@ -280,6 +321,7 @@ body {
 
 .dropdown>li {
     /* outline: 1px solid red; */
+    cursor: pointer;
     height: 42px;
     border-bottom: 1px solid rgba(242, 244, 248, 0.7);
     list-style: none;
@@ -296,6 +338,11 @@ body {
     padding: 0px 30px;
     box-sizing: border-box;
     /* outline: 1px solid red; */
+    transition-duration: 500ms;
+}
+
+.dropdown>li:hover>a {
+    color: #1cc3b2;
 }
 
 /*? Drop down 2 ?*/
@@ -323,7 +370,14 @@ body {
     /* height: 24px; */
     margin-left: 24px;
     padding-bottom: 2px;
+    transition-duration: 500ms;
+    cursor: pointer;
 }
+
+.search-btn:hover {
+    color: #1cc3b2;
+}
+
 
 
 /*? Book Now button ?*/
@@ -334,6 +388,11 @@ body {
     display: flex;
     align-items: center;
     margin-left: 3rem;
+    transition-duration: 500ms;
+}
+
+.book-now-btn:hover {
+    background-color: #2a303b;
 }
 
 .book-now-btn>a {
