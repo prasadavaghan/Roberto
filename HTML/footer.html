@@ -5,247 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700);
-        /* Font family */
-        @font-face {
-            font-family: 'ElegantIcons';
-            src: url('../Resources/icons/fonts/ElegantIcons.eot');
-            src: url('../Resources/icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../Resources/icons/fonts/ElegantIcons.woff') format('woff'), url('../Resources/icons/fonts/ElegantIcons.ttf') format('truetype'), url('../Resources/icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-        .icon_search,
-        .icon_phone,
-        .icon_mail {
-            font-family: 'ElegantIcons';
-            font-style: normal;
-             color: white;
-        }
-        .icon_search:before {
-            content: "\55";
-            font-size: 18px;
-        }
-
-        .icon_phone:before {
-            content: "\e090";
-            color: #1cc3b2;
-            font-size: 14px;
-            padding: 0px 5px 0px 0px;
-        }
-
-        .icon_mail:before {
-             content: "\e076";
-             color: #1cc3b2;
-            font-size: 14px;
-            padding: 0px 5px 0px 0px;
-        }
-        body{
-            width: 100%;
-        }
-        #footer{
-            width: 100%;
-
-            background-color: #0e2737;
-            align-items: center;
-            font-family: 'Poppins', sans-serif;
-
-        }
-        #contain{
-            display: flex;
-            color: white;
-            width: 80%;
-            margin: 0px 15%;
-            padding-top: 80px;
-        }
-        #footer .container{
-            width: 290px;
-
-            font-weight: bold;
-        }
-        .container > *{
-            margin: 3%;
-        }
-        .container>img{
-            width: 60%;
-            height: 20%;
-        }
-        #footer .last{
-            margin: 0px;
-            width: 30%;
-        }
-        .teal{
-            color: #19bbad;
-            font-size: 120%;
-
-        }
-        .gap{
-            margin: 8px 8px;
-
-        }
-        .grey{
-            color: rgb(202, 200, 200);
-            font-weight: lighter;
-        }
-        .link{
-            margin-left: -15px;
-            margin-right: -100px;
-        }
-        .gap1{
-            margin-top: 9%;
-        }
-        .grey li{
-            margin-top: 6%;
-            list-style-type: none;
-            position: relative;
-            color: grey;
-        }
-        li:before {
-            content: "\25BA \0020";
-            font-size: 8px;
-            position: absolute;
-            top: 5px;
-            left: -10px;
-        }
-        #footer .inputF{
-            margin-top: 5%;
-            width: 80%;
-            height: 35px;
-            border-radius: 55px;
-            background-color: #7d8891;
-            padding-left: 10px;
-            color:rgb(199, 199, 199);
-            border: rgb(202, 200, 200);
-        }
-        #footer .container form{
-            display: flex;
-        }
-        #footer .container form button{
-            border-radius: 50%;
-            width: 45px;
-            height: 35px;
-            margin-top: 5.3%;
-            margin-left: -14%;
-            background-color: #19bbad;
-            color: white;
-            border: teal;
-            font-weight: bolder;
-        }
-    /* copyright part */
-        #footer .hrLine{
-            width: 70%;
-            height: 1px;
-            margin: auto;
-            margin-top: 60px;
-            background-color: rgb(202, 200, 200);
-        }
-        .footer-down{
-            display: flex;
-            width: 70%;
-            margin: auto;
-
-        }
-        #footer .footer-down{
-            color: rgb(202, 200, 200);
-        }
-        .footer-down .social-info{
-            margin-top: 15px;
-            margin-left: 250px;
-        }
-        .footer-down .social-info >*{
-            margin:0px 10px;
-            color: rgb(199, 199, 199);
-        }
-        @media only screen and ( max-width:1119px) {
-            #footer{
-            width: 100%;
-            background-color: #0e2737;
-            align-items: center;
-            font-family: 'Poppins', sans-serif;
-
-            }
-            #footer #contain{
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-column-gap: 50px;
-            color: white;
-            width: 80%;
-            margin: 0px 15%;
-            padding-top: 80px;
-            }
-            #footer .last{
-            margin: 0px;
-            width: 80%;
-         }
-         #footer form{
-             width: 100%;
-         }
-         #footer .container form button{
-            border-radius: 50%;
-            width: 45px;
-            height: 35px;
-            margin-top: 5.3%;
-            margin-left: -15%;
-            background-color: #19bbad;
-            color: white;
-            border: teal;
-            font-weight: bolder;
-        }
-        .footer-down .social-info{
-            margin-top: 15px;
-            margin-left: 10%;
-        }
-        .footer-down .social-info >*{
-            margin:0px 5px;
-            color: rgb(199, 199, 199);
-        }
-        .footer-down .widthAd{
-            width: 60%;
-        }
-
-        }
-        @media only screen and ( max-width:750px){
-            #footer #contain{
-            display: flex;
-            flex-direction: column;
-            grid-column-gap: 50px;
-            color: white;
-            width: 80%;
-            margin: 0px 15%;
-            padding-top: 80px;
-            }
-            #footer .container form button{
-            border-radius: 50%;
-            width: 45px;
-            height: 35px;
-            margin-top: 5.3%;
-            margin-left: -11%;
-            background-color: #19bbad;
-            color: white;
-            border: teal;
-            font-weight: bolder;
-            }
-            .footer-down{
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            margin: auto;
-
-            align-items: center;
-            }
-            .footer-down .widthAd{
-                width: 80%;
-                text-align: center;
-            }
-            .footer-down .social-info{
-                margin-top: 10px;
-                margin-left: 0px;
-            }
-        }
-    </style>
+    <style st></style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
 </head>
 <body>
+    <div id="contact">
+        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x1.jpg.pagespeed.ic.KK1vBvVydw.webp">
+        <div class="over">
+            <div class="contact-d">
+                <h1>Contact us now!</h1>
+                <span>Contact (+12) 345-678-9999 to book directly or for advice</span>
+            </div>
+            <div class="btnDiv">
+            <button class="contactBtn">Contact Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer1">
+        <img src="https://preview.colorlib.com/theme/roberto/img/core-img/xp1.png.pagespeed.ic._uh9lbEDUL.webp">
+
+        <img src="https://preview.colorlib.com/theme/roberto/img/core-img/xp2.png.pagespeed.ic.XBcVmIcYDy.webp">
+
+        <img src="https://preview.colorlib.com/theme/roberto/img/core-img/xp3.png.pagespeed.ic.0k2LGF9o6c.webp">
+
+        <img src="https://preview.colorlib.com/theme/roberto/img/core-img/xp4.png.pagespeed.ic.nnZLnqKhIN.webp">
+
+        <img src="https://preview.colorlib.com/theme/roberto/img/core-img/xp5.png.pagespeed.ic.V-nYIIlCUo.webp">
+    </div>
     <section id="footer">
      <div id="contain">
         <div class="container">
