@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .main-container{
+    width: 100%;
+    height: 100%;
+  }
   
    .carousel {
     width: 100%;
@@ -137,8 +142,7 @@
   }
 
   .aboutUsContainer{
-    display: grid; 
-    height: 450px; 
+    display: grid;
     margin: 150px 100px 100px 100px; 
     grid-template-columns: 1fr 1fr;
   }
@@ -174,6 +178,7 @@
   .aboutUsMessage{
     font-size: 20px;
     color: #636A76;
+    padding-right: 20px;
     font-family: 'Poppins', sans-serif;
   }
 
@@ -201,35 +206,33 @@
 
   .aboutUsThumbnailsView{
     display: grid; 
-    height: 450px; 
     grid-template-columns: 1fr 1fr; 
     column-gap: 10px;
   }
 
   .aboutUsThumbnailImages{
     display: grid; 
-    height: 450px; 
     grid-template-rows: 1fr 1fr; 
     row-gap: 10px;
   }
 
   .aboutUsThumbnailImages img {
     width: 100%; 
-    height: 218px; 
+    height: 100%; 
     border-radius: 10px;
   }
 
   .aboutUsThumbnailVerticalImage{
     width: 100%; 
-    height: 450px; 
+    height: 100%; 
     border-radius: 10px;
   }
 
   .servicesBoxContainer{
     display: grid; 
-    height: 150px; 
     margin: 50px 100px 100px 100px; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     column-gap: 50px;
   }
 
   .services-box{
@@ -242,6 +245,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 15% 0 15% 0; 
   }
 
   .services-box > img{
@@ -265,10 +269,33 @@
     color: #ffffff;
   }
 
+
   .slide-1-Container{
     display: grid; 
-    height: 100%; 
+    height: 100vh; 
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .sec-carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sec-carousel ul{
+    list-style-type: none;
+  }
+
+  .sec-carousel ul li {
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .sec-carousel {
+    width: 100%;
+    height: 100vh;
+    position: relative;
   }
 
   .slide-1-Container img {
@@ -286,9 +313,10 @@
   }
 
   .slide-1-DetailsTitle{
-    font-size: 48px; 
+    font-size: 2.4rem; 
     color: #ffffff; 
     font-family: 'Poppins', sans-serif;
+    transition: 2s;
   }
 
   .slide-1-Rent{
@@ -314,9 +342,8 @@
 
   .testimonialsContainer{
     display: grid; 
-    height: 450px; 
     border-radius: 20px; 
-    margin: 120px 120px 100px 120px;
+    margin: 5% 15% 5% 15%;
     grid-template-columns: 1fr 1fr; 
     column-gap: 10px;
   }
@@ -402,7 +429,7 @@
   .galleryDescContainer{
     display: grid; 
     width: 100%; 
-    height: 100px; 
+    height: 10%; 
     grid-template-columns: 1fr 1fr 1fr; 
     position: absolute; 
     bottom: 0px; 
@@ -429,7 +456,15 @@
     font-family: 'Popins', sans-serif; 
     margin: 3px 0 3px 0;
   }
-
+  
+  /*  */
+  
+  .blogSection{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+  }
+  
   .blogContainer{
     width: 100%; 
     height: 80px; 
@@ -445,7 +480,7 @@
     font-size: 16px; 
     font-family: 'Popins', sans-serif;
   }
-
+  
   .blogContSubTitle{
     font-size: 42px; 
     font-family: 'Popins', sans-serif;
@@ -453,7 +488,7 @@
 
   .blogCardContainer{
     display: grid; 
-    height: 400px; 
+    height: 500px; 
     margin: 50px 100px 100px 100px; 
     grid-template-columns: 1fr 1fr 1fr; 
     column-gap: 30px;
@@ -493,3 +528,784 @@
     font-size: 16px; 
     font-family: 'Popins', sans-serif;
   }
+
+  /* ============================================================= */
+
+  @media (min-width: 0px) and (max-width: 575px) {
+    /* carousel */
+    body{
+       width: 185%;
+    }
+    .carousel{
+       width: 185%;
+    }
+
+    /* Welcome to hotel */
+
+    .aboutUsContainer{
+      display: flex;
+      flex-direction: column;
+      width: 185%;
+      margin: 0;
+      /* margin: 150px 100px 100px 100px;  */
+      grid-template-columns: 1fr;
+    }
+
+    .aboutUsTextDetails{
+     display: flex;
+     flex-direction: column;
+     padding: 0 4rem;
+    }
+
+    .aboutUsTitleView{
+      height: 40rem;
+    }
+
+    .aboutUsTitleView p{
+      font-size: 3rem;
+    }
+
+    .aboutUsTitleView h1{
+      font-size: 5rem;
+    }
+
+    .aboutUsMessage{
+      font-size: 4rem;
+      text-align: left;
+    }
+
+    .aboutUsManagerDetailView p{
+      margin-top: 4rem;
+      font-size: 3.5rem;  
+    }
+
+    .aboutUsMessageView img {
+      width: 400px; 
+      height: 200px;
+      margin: 5rem 0;
+    }
+
+    .aboutUsThumbnailsView{
+      padding: 0 3rem;
+    }
+
+    /* boxes */
+
+    .servicesBoxContainer{
+      margin: 0;
+      width: 185%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5rem;
+      padding: 10rem 3rem;
+    }
+
+    .services-box{
+      margin: 0;
+      padding: 0;
+      height: 400px !important;
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 1rem;
+    }
+
+    .services-box img{
+      height: 100px;
+      width: 100px;
+    }
+
+    .services-box p{
+      font-size: 3rem;
+    }
+
+
+  /* 2nd slider */
+
+    .ff{
+     /* height: 100%; */
+      background-color: yellow;
+      width: 185%;
+    }
+
+.sec-carousel{
+  position: relative;
+  width: 100%; 
+  height: 160rem; 
+  background-color: #0e2737;
+}
+
+.slide-1-Container{
+  margin: 0;
+      display: grid; 
+      grid-template-columns: 1fr;
+}
+
+
+.slide-1-Container img {
+  margin: 6rem 0;
+  width: 100%; 
+  height: 60%; 
+  /* object-fit: contain;  */
+}
+
+.carouselButtons{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.carouselButtons p{
+  font-size: 3rem;
+}
+
+.carousel-button-1-prev{
+   width: 28rem;
+   height: 10rem;
+}
+
+.carousel-button-1-next{
+  width: 28rem;
+  height: 10rem;
+}
+
+
+.slide-1-Details{
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  padding: 10px 0px 10px 50px 
+}
+
+.slide-1-DetailsTitle{
+  font-size: 6rem; 
+}
+
+.slide-1-Rent{
+  font-size: 6rem; 
+}
+
+.slide-1-Details ul li{
+    font-size: 3rem;
+}
+
+.slide-1-viewDetails{
+  width: 40rem;
+  height: 10rem;
+}
+
+.slide-1-viewDetails p{
+  font-size: 3.4rem;
+}
+
+
+/* testmonial */
+
+.testimonialsContainer{
+    /* margin: 0; */
+    margin: 5rem 0;
+    padding: 4rem;
+    width: 185%;
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+
+.testimonialsContainer img{
+  width: 100%; 
+  height: 100%; 
+  border-radius: 10px; 
+  object-fit: cover;
+}
+
+.testimonialsMessageView{
+  height: 1000px; 
+}
+
+.testimonialsTitle{
+  font-size: 3rem; 
+}
+
+.testimonialsSubTitle{
+  font-size: 5rem; 
+}
+
+.testimonialsMessage p{
+  font-size: 3rem; 
+}
+
+.radio-dot{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 5px 0 5px;
+}
+
+.galleryContainer{
+  /* display: grid;  */
+  width: 185%; 
+  height: 115vh;
+  /* overflow: hidden;  */
+}
+
+.galleryContainer img{
+  width: 100%; 
+  height: 115vh; 
+  object-fit: cover;
+}
+
+
+.blogSection{
+  width: 185%;
+  height: 100%;
+}
+
+.blogCardContainer{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.blogCardSubContainer{
+  height: 90%;
+}
+
+.blogContentView{
+  width: 100%;
+}
+
+.blogDate{
+  font-size: 4rem;
+}
+
+.blogTitle{
+  font-size: 5rem;
+}
+
+.blogMsg{
+  font-size: 3rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+}
+
+
+ /* =======================  [ 567px to 767 ]  ====================================== */
+
+ @media (min-width: 576px) and (max-width: 767px) {
+  /* carousel */
+  body{
+     width: 100%;
+  }
+  .carousel{
+     width: 185%;
+  }
+
+  /* Welcome to hotel */
+
+  .aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 185%;
+    margin: 0;
+    /* margin: 150px 100px 100px 100px;  */
+    grid-template-columns: 1fr;
+  }
+
+  .aboutUsTextDetails{
+   display: flex;
+   flex-direction: column;
+   padding: 0 4rem;
+  }
+
+  .aboutUsTitleView{
+    height: 40rem;
+  }
+
+  .aboutUsTitleView p{
+    font-size: 3rem;
+  }
+
+  .aboutUsTitleView h1{
+    font-size: 5rem;
+  }
+
+  .aboutUsMessage{
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .aboutUsManagerDetailView p{
+    margin-top: 4rem;
+    font-size: 3.5rem;  
+  }
+
+  .aboutUsMessageView img {
+    width: 400px; 
+    height: 200px;
+    margin: 5rem 0;
+  }
+
+  .aboutUsThumbnailsView{
+    padding: 0 3rem;
+  }
+
+  /* boxes */
+
+  .servicesBoxContainer{
+    margin: 0;
+    width: 185%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    padding: 10rem 3rem;
+  }
+
+  .services-box{
+    margin: 0;
+    padding: 0;
+    height: 400px !important;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 1rem;
+  }
+
+  .services-box img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .services-box p{
+    font-size: 3rem;
+  }
+
+
+/* 2nd slider */
+
+  .ff{
+   /* height: 100%; */
+    background-color: yellow;
+    width: 185%;
+  }
+
+.sec-carousel{
+position: relative;
+width: 100%; 
+height: 160rem; 
+background-color: #0e2737;
+}
+
+.slide-1-Container{
+margin: 0;
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+
+.slide-1-Container img {
+margin: 6rem 0;
+width: 100%; 
+height: 60%; 
+/* object-fit: contain;  */
+}
+
+.carouselButtons{
+position: absolute;
+bottom: 0;
+left: 50%;
+}
+
+.carouselButtons p{
+font-size: 3rem;
+}
+
+.carousel-button-1-prev{
+ width: 28rem;
+ height: 10rem;
+}
+
+.carousel-button-1-next{
+width: 28rem;
+height: 10rem;
+}
+
+
+.slide-1-Details{
+width: 100%;
+height: 100%;
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+padding: 10px 0px 10px 50px 
+}
+
+.slide-1-DetailsTitle{
+font-size: 6rem; 
+}
+
+.slide-1-Rent{
+font-size: 6rem; 
+}
+
+.slide-1-Details ul li{
+  font-size: 3rem;
+}
+
+.slide-1-viewDetails{
+width: 40rem;
+height: 10rem;
+}
+
+.slide-1-viewDetails p{
+font-size: 3.4rem;
+}
+
+
+/* testmonial */
+
+.testimonialsContainer{
+  /* margin: 0; */
+  margin: 5rem 0;
+  padding: 4rem;
+  width: 185%;
+  display: grid; 
+  grid-template-columns: 1fr; 
+}
+
+.testimonialsContainer img{
+width: 100%; 
+height: 100%; 
+border-radius: 10px; 
+object-fit: cover;
+}
+
+.testimonialsMessageView{
+height: 1000px; 
+}
+
+.testimonialsTitle{
+font-size: 3rem; 
+}
+
+.testimonialsSubTitle{
+font-size: 5rem; 
+}
+
+.testimonialsMessage p{
+font-size: 3rem; 
+}
+
+.radio-dot{
+width: 35px;
+height: 35px;
+border-radius: 50%;
+margin: 0 5px 0 5px;
+}
+
+.galleryContainer{
+/* display: grid;  */
+width: 185%; 
+height: 115vh;
+/* overflow: hidden;  */
+}
+
+.galleryContainer img{
+width: 100%; 
+height: 115vh; 
+object-fit: cover;
+}
+
+
+.blogSection{
+width: 185%;
+height: 100%;
+}
+
+.blogCardContainer{
+height: 100%;
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.blogCardSubContainer{
+height: 90%;
+}
+
+.blogContentView{
+width: 100%;
+}
+
+.blogDate{
+font-size: 4rem;
+}
+
+.blogTitle{
+font-size: 5rem;
+}
+
+.blogMsg{
+font-size: 3rem;
+padding: 0.5rem;
+text-align: left;
+}
+
+}
+
+/* =======================  [ 768px to 991 ]  ====================================== */
+
+ @media (min-width: 768px) and (max-width: 991px) {
+  /* carousel */
+  body{
+     width: 185%;
+     margin: 0;
+  }
+  .carousel{
+     width: 185%;
+     /* height: 100% !important; */
+  }
+
+  /* Welcome to hotel */
+
+  /* .aboutUsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 185%;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .aboutUsTextDetails{
+   display: flex;
+   flex-direction: column;
+   padding: 0 4rem;
+  }
+
+  .aboutUsTitleView{
+    height: 40rem;
+  }
+
+  .aboutUsTitleView p{
+    font-size: 3rem;
+  }
+
+  .aboutUsTitleView h1{
+    font-size: 5rem;
+  }
+
+  .aboutUsMessage{
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .aboutUsManagerDetailView p{
+    margin-top: 4rem;
+    font-size: 3.5rem;  
+  }
+
+  .aboutUsMessageView img {
+    width: 400px; 
+    height: 200px;
+    margin: 5rem 0;
+  }
+
+  .aboutUsThumbnailsView{
+    padding: 0 3rem;
+  } */
+
+  /* boxes */
+
+  .servicesBoxContainer{
+    margin: 0;
+    width: 185%;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* column-gap: 5rem; */
+    padding: 10rem 3rem;
+  }
+
+  .services-box{
+    margin: 0;
+    padding: 0;
+    height: 400px !important;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 1rem;
+  }
+
+  .services-box img{
+    height: 100px;
+    width: 100px;
+  }
+/* 
+  .services-box p{
+    font-size: 3rem;
+  } */
+
+
+/* 2nd slider */
+
+  /* .ff{
+    background-color: yellow;
+    width: 185%;
+  }
+
+.sec-carousel{
+position: relative;
+width: 100%; 
+height: 160rem; 
+background-color: #0e2737;
+}
+
+.slide-1-Container{
+margin: 0;
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+
+.slide-1-Container img {
+margin: 6rem 0;
+width: 100%; 
+height: 60%; 
+}
+
+.carouselButtons{
+position: absolute;
+bottom: 0;
+left: 50%;
+}
+
+.carouselButtons p{
+font-size: 3rem;
+}
+
+.carousel-button-1-prev{
+ width: 28rem;
+ height: 10rem;
+}
+
+.carousel-button-1-next{
+width: 28rem;
+height: 10rem;
+}
+
+
+.slide-1-Details{
+width: 100%;
+height: 100%;
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+padding: 10px 0px 10px 50px 
+}
+
+.slide-1-DetailsTitle{
+font-size: 6rem; 
+}
+
+.slide-1-Rent{
+font-size: 6rem; 
+}
+
+.slide-1-Details ul li{
+  font-size: 3rem;
+}
+
+.slide-1-viewDetails{
+width: 40rem;
+height: 10rem;
+}
+
+.slide-1-viewDetails p{
+font-size: 3.4rem;
+} */
+
+
+/* testmonial */
+
+/* .testimonialsContainer{
+  margin: 0;
+  margin: 5rem 0;
+  padding: 4rem;
+  width: 185%;
+  display: grid; 
+  grid-template-columns: 1fr; 
+}
+
+.testimonialsContainer img{
+width: 100%; 
+height: 100%; 
+border-radius: 10px; 
+object-fit: cover;
+}
+
+.testimonialsMessageView{
+height: 1000px; 
+}
+
+.testimonialsTitle{
+font-size: 3rem; 
+}
+
+.testimonialsSubTitle{
+font-size: 5rem; 
+}
+
+.testimonialsMessage p{
+font-size: 3rem; 
+}
+
+.radio-dot{
+width: 35px;
+height: 35px;
+border-radius: 50%;
+margin: 0 5px 0 5px;
+}
+
+.galleryContainer{
+width: 185%; 
+height: 115vh; 
+}
+
+.galleryContainer img{
+width: 100%; 
+height: 115vh; 
+object-fit: cover;
+}
+
+
+.blogSection{
+width: 185%;
+height: 100%;
+}
+
+.blogCardContainer{
+height: 100%;
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.blogCardSubContainer{
+height: 90%;
+}
+
+.blogContentView{
+width: 100%;
+}
+
+.blogDate{
+font-size: 4rem;
+}
+
+.blogTitle{
+font-size: 5rem;
+}
+
+.blogMsg{
+font-size: 3rem;
+padding: 0.5rem;
+text-align: left;
+} */
+
+}
