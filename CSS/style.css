@@ -9,8 +9,10 @@
 
 @font-face {
     font-family: 'ElegantIcons';
-    src: url('../Resources/icons/fonts/ElegantIcons.eot');
-    src: url('../Resources/icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../Resources/icons/fonts/ElegantIcons.woff') format('woff'), url('../Resources/icons/fonts/ElegantIcons.ttf') format('truetype'), url('../Resources/icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+    src:url('../Resources/icons/fonts/ElegantIcons.eot');
+    src:url('../Resources/icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../Resources/icons/fonts/ElegantIcons.woff') format('woff'),
+        url('../Resources/icons/fonts/ElegantIcons.ttf') format('truetype'),
+        url('../Resources/icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,6 +44,12 @@
     padding: 0px 5px 0px 0px;
 }
 
+.dropdown-cont>a>img {
+    padding-top: 8px;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 11px;
+}
 
 /*!---------------------------------------------------*/
 
@@ -86,10 +94,18 @@ body {
 
 .search-form {
     /* max-width: 1200px; */
+    opacity: 0;
+    height: 0px;
     margin: auto;
-    height: 80px;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in;
     display: flex;
     align-items: center;
+}
+
+.search-form-active {
+    height: 80px;
+    opacity: 1;
 }
 
 .container {
@@ -186,4 +202,151 @@ body {
 .height-check {
     height: 1000px;
     background-color: black;
+}
+
+/*? Nav Menu ?*/
+
+.header-menu-main {
+    /* outline: 1px solid red; */
+    /* width: 100%; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* padding-bottom: 2px; */
+}
+
+.navbar {
+    /* outline: 1px solid red; */
+    display: flex;
+    /* height: 100%; */
+    align-items: center;
+    /* gap: 40px; */
+    /* justify-content: center; */
+    
+}
+
+#nav {
+    /* outline: 1px solid red; */
+    display: flex;
+    height: 40px;
+    width: 612.5px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+    /* gap: 40px; */
+}
+
+.navbar>#nav>li {
+    list-style: none;
+}
+
+.navbar>#nav>li>a {
+    /* outline: 1px solid red; */
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #2a303b;
+    font-weight: 500;
+}
+
+/*? Drop down 1 ?*/
+
+.dropdown-cont {
+    position: relative;
+}
+
+.dropdown {
+    opacity: 0;
+    visibility: hidden;
+    width: 210px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 150%;
+    z-index: 100;
+    box-shadow: 0 2px 40px 8px rgb(15 15 15 / 15%);
+    transition-duration: 300ms;
+    border-radius: 6px;
+    padding: 10px 0;
+    border: 0px;
+}
+
+.dropdown-cont:hover>.dropdown,.dropdown:hover>.dropdown {
+    opacity: 1;
+    top: 130%;
+    visibility: visible;
+}
+
+.dropdown>li {
+    /* outline: 1px solid red; */
+    height: 42px;
+    border-bottom: 1px solid rgba(242, 244, 248, 0.7);
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.dropdown>li>a {
+    font-size: 14px;
+    width: 100%;
+    line-height: 42px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2a303b;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/*? Drop down 2 ?*/
+
+.dropdown .dropdown {
+    /* position: absolute; */
+    opacity: 0;
+    top: 20px;
+    left: 180px;
+}
+
+.dropdown>.dropdown-cont:hover>.dropdown, .dropdown>.dropdown-cont>.dropdown:hover>.dropdown {
+    opacity: 1;
+    top: -10px;
+}
+
+.dropdown>li:last-child {
+    border: 0px;
+}
+
+
+/*? Search Button ?*/
+
+.search-btn {
+    /* height: 24px; */
+    margin-left: 24px;
+    padding-bottom: 2px;
+}
+
+
+/*? Book Now button ?*/
+
+.book-now-btn {
+    height: 100%;
+    background-color: #1cc3b2;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.book-now-btn>a {
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 80px;
+    font-weight: 500;
+}
+
+.book-now-btn>a>i {
+    padding-left: 5px;
 }
