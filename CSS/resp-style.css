@@ -1,6 +1,37 @@
+@media (min-width:992px) and (max-width:1199px){
+     
+  .carousel-subTitle{
+    font-size: 48px; 
+  }
+  
+  .avail-box{
+    margin: 0 50px;
+  }
+
+  .servicesBoxContainer{
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 10px;
+      margin: 50px 120px 100px 120px;
+    }
+  
+    .services-box{
+      width: 100% ;
+      height: 120px;
+    }
+
+    .services-box p{
+        font-size: 1rem;
+    }
+}
+
 @media only screen and (max-width:992px){
   .carousel{
      max-width: 100%;
+  }
+
+  .carousel-subTitle{
+    font-size: 42px; 
   }
 
   .carousel-button {
@@ -25,6 +56,15 @@
 
     .carousel-button.next {
       right: 1rem;
+    }
+
+    .avail-box{
+      margin: 0px 10px;
+      padding: 0 5px; 
+    }
+
+    .ind-avail-box{
+      margin: 20px 5px;
     }
 
     .aboutUsContainer{
@@ -126,6 +166,25 @@
 }
 
 @media only screen and (max-width:768px){
+  .carousel-subTitle{
+    font-size: 30px; 
+  }
+
+  .avail-main-container{
+    height: 350px;  
+    bottom: -160px;
+  }
+  
+  .avail-box{
+    margin: 0 10px; 
+    padding: 0px 10px;
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .aboutUsContainer{
+    margin: 200px 100px 100px 100px; 
+  }
+
     .servicesBoxContainer{ 
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -255,8 +314,24 @@
 }
 
 @media only screen and (max-width:576px){
-    .aboutUsContainer{
-      margin: 10px; 
+
+  .carousel-subTitle{
+    font-size: 30px; 
+  }
+
+  .avail-main-container{
+    height: 350px;  
+    bottom: -160px;
+  }
+  
+  .avail-box{
+    margin: 0 10px; 
+    padding: 0px 10px;
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .aboutUsContainer{
+      margin: 180px 10px 0px 10px; 
     }
   
     .servicesBoxContainer{
@@ -307,22 +382,5 @@
     }
 }
 
-@media (min-width:992px) and (max-width:1199px){
-  .servicesBoxContainer{
-      display: grid; 
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      column-gap: 10px;
-      margin: 50px 120px 100px 120px;
-    }
-  
-    .services-box{
-      width: 100% ;
-      height: 120px;
-    }
-
-    .services-box p{
-        font-size: 1rem;
-    }
-}
 
 
