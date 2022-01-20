@@ -189,8 +189,8 @@
         }
 
         #contact .over .contactBtn{
-            width: 200%;
-            height: 80%;
+            width: 190%;
+            height: 60%;
             background-color: #1cc3b2;
             border: #1cc3b2;
             border-radius: 3px;
@@ -271,6 +271,15 @@
         #contact .btnDiv{
             margin-left: 10%;
         }
+        #contact .over{
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            width: 100%;
+            }
         }
         @media only screen and ( max-width:750px){
             #footer #contain{
@@ -311,7 +320,7 @@
             }
             #contact > img{
                 width: 100%;
-                height: 200px;
+                height: 250px;
             }
             #contact .over{
             position: absolute;
@@ -335,7 +344,7 @@
             width: 100%;
             }
             #contact .over .contactBtn{
-            width: 80%;
+            width: 60%;
             }
         }
         @media only screen and ( max-width:575px){
@@ -361,4 +370,7 @@
             font-weight: bold;
             width: 100%;
             }
+            #contact .over .contactBtn{
+                width: 80%;
+                }
         }
