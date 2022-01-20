@@ -1,0 +1,355 @@
+
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700);
+        @font-face {
+            font-family: 'ElegantIcons';
+            src: url('../Resources/icons/fonts/ElegantIcons.eot');
+            src: url('../Resources/icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../Resources/icons/fonts/ElegantIcons.woff') format('woff'), url('../Resources/icons/fonts/ElegantIcons.ttf') format('truetype'), url('../Resources/icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .icon_search,
+        .icon_phone,
+        .icon_mail {
+            font-family: 'ElegantIcons';
+            font-style: normal;
+             color: white;
+        }
+        .icon_search:before {
+            content: "\55";
+            font-size: 18px;
+        }
+
+        .icon_phone:before {
+            content: "\e090";
+            color: #1cc3b2;
+            font-size: 14px;
+            padding: 0px 5px 0px 0px;
+        }
+
+        .icon_mail:before {
+             content: "\e076";
+             color: #1cc3b2;
+            font-size: 14px;
+            padding: 0px 5px 0px 0px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Image with data */
+        #first{
+            width: 100%;
+            position: relative;
+        }
+        #first .img img{
+            width: 100%;
+            height: 400px;
+            opacity: 0.9;
+        }
+        #first .content{
+            width: 100%;
+            background-color:#556571;
+            opacity: 0.8;
+            height: 400px;
+            text-align: center;
+            position:absolute;
+            top: 0px;
+
+        }
+        #first .content h2{
+            font-size: 48px;
+            font-weight: 500;
+        }
+        #first .content *{
+            margin: 0px;
+        }
+        #first .cInside{
+            margin: 10%;
+            color:rgb(255, 255, 255);
+
+        }
+        .googleMap{
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: white;
+            height: 750px;
+            border: white;
+            box-shadow: 0 0 10px 0px;
+            border-radius: 5px;
+
+        }
+        .googleMap .items-flex{
+            width: 100%;
+            display: flex;
+            margin-top: 40px;
+        }
+        .googleMap .items-flex>div{
+            width: 30%;
+            text-align: center;
+        }
+        .googleMap>.map{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .map iframe{
+            width: 90%;
+            margin: auto;
+            height: 500px;
+        }
+        .googleMap .items-flex i{
+            color: rgb(28 195 178);
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .googleMap .items-flex h4{
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+        .googleMap .items-flex p{
+            color: grey;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+        .contact-form{
+            width: 70%;
+            position:relative;
+            top: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 4%;
+        }
+        .contact-form .message > *{
+            margin: 0px;
+            font-weight: 500;
+        }
+        .contact-form .message > h6{
+            font-size: 16px;
+            color: #1cc3b2;
+        }
+        .contact-form .form{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .contact-form .form > *{
+            width: 48%;
+            height: 40px;
+            border-radius: 5px;
+            border: 0.01px solid rgb(211, 210, 210);
+        }
+        .contact-form .form .message-width{
+            width: 100%;
+            height: 150px;
+            margin-top: 20px;
+
+        }
+        .form .gap26{
+            margin-left: 25px;
+        }
+        .form .submit{
+            background-color: #1cc3b2;
+            color: white;
+            font-weight: bold;
+            font-size: 110%;
+            width: 20%;
+            height: 45px;
+            border: #1cc3b2;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+        @media only screen and (max-width:1199px) {
+            #first .cInside{
+            margin: 15%;
+            color:rgb(255, 255, 255);
+
+            }
+            .googleMap{
+            position: absolute;
+            top: 40%;
+            left: 0px;
+            right: 0%;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: white;
+            height: 750px;
+            border: white;
+            box-shadow: 0 0 10px 0px;
+            border-radius: 5px;
+
+            }
+            .contact-form .form > *{
+            width: 45%;
+            height: 40px;
+            border-radius: 5px;
+            border: 0.01px solid rgb(211, 210, 210);
+            }
+          .contact-form{
+            width: 70%;
+            position:relative;
+            top: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 80px;
+            }
+        }
+        @media only screen and (max-width:992px){
+            #first .cInside{
+            margin: 15%;
+            color:rgb(255, 255, 255);
+
+            }
+            .googleMap .items-flex{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10px ;
+            margin-top: 40px;
+            margin-left: 15%;
+            }
+            .googleMap .items-flex>div{
+            width: 50%;
+            text-align: center;
+            }
+            .googleMap{
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: white;
+            height: 110%;
+            border: white;
+            box-shadow: 0 0 10px 0px;
+            border-radius: 5px;
+
+            }
+            .contact-form{
+            width: 70%;
+            position:relative;
+            top: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 150px;
+            }
+            .contact-form .form > *{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            border: 0.01px solid rgb(211, 210, 210);
+            }
+            .form .gap26{
+            margin-left: 0px;
+            margin-top: 20px;
+            }
+            .form .submit{
+            background-color: #1cc3b2;
+            color: white;
+            font-weight: bold;
+            font-size: 80%;
+            width: 20%;
+            height: 45px;
+            border: #1cc3b2;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 0px;
+         }
+        }
+        @media only screen and (max-width:767px){
+            .form .submit{
+            background-color: #1cc3b2;
+            color: white;
+            font-weight: bold;
+            font-size: 80%;
+            width: 30%;
+            height: 45px;
+            border: #1cc3b2;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 0px;
+         }
+         .googleMap{
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: white;
+            height: 115%;
+            border: white;
+            box-shadow: 0 0 10px 0px;
+            border-radius: 5px;
+
+            }
+            .contact-form{
+            width: 70%;
+            position:relative;
+            top: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 200px;
+            }
+            .googleMap .items-flex i{
+            color: rgb(28 195 178);
+            font-weight: bold;
+            font-size: 24px;
+            }
+            .googleMap .items-flex h4{
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 0px;
+            }
+        }
+        @media only screen and (max-width:575px){
+            #first .cInside{
+            margin: 20%;
+            color:rgb(255, 255, 255);
+
+            }
+            .googleMap{
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: white;
+            height: 115%;
+            border: white;
+            box-shadow: 0 0 10px 0px;
+            border-radius: 5px;
+
+            }
+            .contact-form .form .message-width{
+            width: 100%;
+            height: 100px;
+            margin-top: 20px;
+
+            }
+            .form .submit{
+            background-color: #1cc3b2;
+            color: white;
+            font-weight: bold;
+            font-size: 90%;
+            width: 50%;
+            height: 40px;
+            border: #1cc3b2;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 0px;
+         }
+        }
