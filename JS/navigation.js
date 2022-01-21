@@ -55,15 +55,33 @@ removeHover();
 let trigger1 = header.querySelector('.t1')
 let trigger2 = header.querySelector('.t2')
 let dropLists = header.querySelectorAll('.dropdown-cont')
+let dropDowns = header.querySelectorAll('.dropdown')
 let dl1 = dropLists[0]
 let dl2 = dropLists[1]
+let dd1 = dropDowns[0]
+let dd2 = dropDowns[1]
 
 let drop1 = () => {
     dl1.classList.toggle("open");
+    if(dl1.classList.contains("open")){
+        dd1.style.height = `336px`;
+        if(dl2.classList.contains("open")){
+            dd1.style.height = `504px`;
+        }
+    }
+    else{
+        dd1.style.height = `0px`;
+    }
 }
 
 let drop2 = () => {
     dl2.classList.toggle("open")
+    if(dl2.classList.contains("open")){
+        dd1.style.height = `504px`;
+    }
+    else if(dl1.classList.contains("open")){
+        dd1.style.height = `336px`;
+    }
 }
 
 trigger1.addEventListener("click", drop1)
