@@ -16,7 +16,7 @@ html{
   /* Main Slider */
  .carousel {
   width: 100%;
-  height: 100vh;
+  height: 118vh;
   position: relative;
 }
 
@@ -26,13 +26,13 @@ html{
 
 .carousel-heading-view{
   position: absolute; 
-  top: 35%; 
+  top: 30%; 
   width: 100%; 
   height: 35%; 
   z-index: 5; 
   display: flex; 
   flex-direction: column;
-  justify-content: space-around; 
+  justify-content: space-evenly; 
   align-items: center;
 }
 
@@ -45,7 +45,7 @@ html{
 
 .carousel-subTitle{
   font-size: 72px; 
-  font-weight: 700; 
+  /* font-weight: 700;  */
   font-family: 'Poppins', sans-serif; 
   color: white;
 }
@@ -72,19 +72,32 @@ html{
   opacity: 0;
   transition: 200ms opacity ease-in-out;
   transition-delay: 200ms;
+  overflow: hidden;
 }
 
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+#slide-image-1{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://preview.colorlib.com/theme/roberto/img/bg-img/16.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+#slide-image-2{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://preview.colorlib.com/theme/roberto/img/bg-img/17.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#slide-image-3{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://preview.colorlib.com/theme/roberto/img/bg-img/18.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slide[data-active] {
-  opacity: 0.7;
+  opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
@@ -98,7 +111,7 @@ html{
   background: none;
   border: none;
   font-size: 4rem;
-  top: 50%;
+  top: 48%;
   transform: translateY(-50%);
   color: rgba(255, 255, 255, .5);
   cursor: pointer;
@@ -137,13 +150,13 @@ html{
 /* Availability input section */
 .avail-main-container{
   width: 100%; 
-  height: 150px; 
+  height: 155px; 
   display: flex; 
   justify-content: center; 
   align-items: center;
   z-index: 5; 
   position: absolute; 
-  bottom: -80px;
+  bottom: -190px;
 }
 
 .avail-box{
@@ -152,15 +165,16 @@ html{
   padding: 0 10px; 
   height: 100%; 
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1.3fr 0.8fr 0.9fr; 
   box-shadow: 0 2px 14px 5px rgb(20 20 20 / 10%); 
   background-color: #ffffff; 
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .check-inputs{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .ind-avail-box{
@@ -176,6 +190,7 @@ html{
 }
 
 .ind-avail-input {
+  width: 200px;
   height: 45px; 
   border-radius: 5px; 
   border: 1px solid gray; 
@@ -208,6 +223,7 @@ html{
   border-radius: 5px; 
   border:1px solid grey; 
   opacity: 0.5;
+  padding-left: 10px;
 }
 
 .avail-button-view{
@@ -334,15 +350,12 @@ html{
   transform: scale(1.2);
 }
 
-
 .aboutUsThumbnailImages{
   display: grid; 
   grid-template-rows: 1fr 1fr; 
   row-gap: 10px;
   overflow: hidden;
 }
-
-
 
 .aboutUsThumbnailImages img {
   width: 100%; 
@@ -468,7 +481,7 @@ html{
 }
 
 .slide-1[data-active] {
-  opacity: 0.7;
+  opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
@@ -487,6 +500,19 @@ html{
   padding: 10px 0px 10px 50px
 }
 
+.slide-1-DetailsText{
+  display: flex; 
+  flex-direction: row; 
+  /* width: 400px;  */
+  margin-right: 100px;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.slide-1-DetailsText ul li{
+  margin: 10px 0px;
+}
+
 .slide-1-DetailsTitle{
   font-size: 2.4rem; 
   color: #ffffff; 
@@ -498,6 +524,10 @@ html{
   font-size: 36px; 
   color: #1cc3b2; 
   font-family: 'Poppins', sans-serif;
+}
+
+.slide1-rent-span{
+  color: white; font-size: 14px;
 }
 
 .slide-1-viewDetails{
@@ -524,10 +554,17 @@ html{
   height: 450px;
 }
 
+.imgSecView{
+  overflow: hidden;
+}
 
 .imgSec{
-  height: auto;
+  height: 100%;
   width: 100%;
+  left: 0; 
+  display: flex;
+  position: relative; 
+ animation: 20s testimonial infinite;
 }
 
 .imgSec img{
@@ -535,7 +572,34 @@ width: 100%;
 height: 100%; 
 border-radius: 10px; 
 object-fit: cover;
+float: left;
 }
+
+@keyframes testimonial {
+  0%{
+    left: 0;
+  }
+
+  20%{
+    left: -0%;
+  }
+
+  25%{
+    left: -100%;
+ }
+
+ 50%{
+ left: -100%;
+} 
+70%{
+ left: -100%;
+}
+
+100%{
+ left: -100%;
+}
+}
+
 
 .testimonialsMessageView{
 display: grid;

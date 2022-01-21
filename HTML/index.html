@@ -23,9 +23,7 @@
                 </div>
 
                 <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/16.jpg.webp"
-                            alt="Room Interior #1">
+                    <li id="slide-image-1" class="slide" data-active>
                         <div class="carousel-heading-view">
                             <p class="carousel-title">HOTEL & RESORTS</p>
                             <p class="carousel-subTitle">
@@ -33,9 +31,7 @@
                             <button class="carousel-heading-button">Discover Now</button>
                         </div>
                     </li>
-                    <li class="slide">
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/17.jpg.webp"
-                            alt="Room Interior #2">
+                    <li id="slide-image-2" class="slide">
                         <div class="carousel-heading-view">
                             <p class="carousel-title">HOTEL & RESORTS</p>
                             <p class="carousel-subTitle">
@@ -43,9 +39,7 @@
                             <button class="carousel-heading-button">Discover Now</button>
                         </div>
                     </li>
-                    <li class="slide">
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/18.jpg.webp"
-                            alt="Room Interior #3">
+                    <li id="slide-image-3" class="slide">
                         <div class="carousel-heading-view">
                             <p class="carousel-title">HOTEL & RESORTS</p>
                             <p class="carousel-subTitle">
@@ -59,28 +53,32 @@
         <!-- Availablity input section -->
         <div class="avail-main-container">
             <div class="avail-box">
-                <div class="ind-avail-box">
-                    <p>Check In</p>
-                    <input type="date" class="ind-avail-input">
+                <div class="check-inputs">
+                    <div class="ind-avail-box">
+                        <p>Check In</p>
+                        <input type="date" class="ind-avail-input">
+                    </div>
+                    <div class="ind-avail-box">
+                        <p>Check Out</p>
+                        <input type="date" class="ind-avail-input">
+                    </div>
                 </div>
-                <div class="ind-avail-box">
-                    <p>Check Out</p>
-                    <input type="date" class="ind-avail-input">
-                </div>
+
                 <div class="number-input">
                     <div class="room-number-input">
                         <p>Room</p>
-                        <input type="number" class="room-number-inputTag"></input>
+                        <input type="number" class="room-number-inputTag" value="01"></input>
                     </div>
                     <div class="room-number-input">
                         <p>Adult</p>
-                        <input type="number" class="room-number-inputTag"></input>
+                        <input type="number" class="room-number-inputTag" value="01"></input>
                     </div>
                     <div class="room-number-input">
                         <p>Children</p>
-                        <input type="number" class="room-number-inputTag"></input>
+                        <input type="number" class="room-number-inputTag" value="01"></input>
                     </div>
                 </div>
+
                 <div class="avail-button-view">
                     <button class="avail-button">Check Availabilty</button>
                 </div>
@@ -173,15 +171,23 @@
                                 <div class="slide-1-Details">
                                     <p class="slide-1-DetailsTitle">Premium King
                                         Room</p>
-                                    <p class="slide-1-Rent">400$<span style="color: white; font-size: 14px;">
+                                    <p class="slide-1-Rent">400$<span class="slide1-rent-span">
                                             / Day</span>
                                     </p>
-                                    <ul>
-                                        <li>Size: 30 ft</li>
-                                        <li>Capacity:Max persion 5</li>
-                                        <li>Bed:King Beds</li>
-                                        <li>Services:Wifi, Television, Bathroom</li>
-                                    </ul>
+                                    <div class="slide-1-DetailsText">
+                                        <ul>
+                                            <li>Size</li>
+                                            <li>Capacity</li>
+                                            <li>Bed</li>
+                                            <li>Services</li>
+                                        </ul>
+                                        <ul>
+                                            <li>:30 ft</li>
+                                            <li>:Max person 5</li>
+                                            <li>:King Beds</li>
+                                            <li>:Wifi, Television, Bathroom</li>
+                                        </ul>
+                                    </div>
                                     <div class="slide-1-viewDetails">
                                         <p>View Details</p>
                                     </div>
@@ -193,16 +199,24 @@
                                 <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/17.jpg.webp"
                                     alt="Room Interior #1">
                                 <div class="slide-1-Details">
-                                    <p class="slide-1-DetailsTitle">Premium King
+                                    <p class="slide-1-DetailsTitle">Best King
                                         Room</p>
-                                    <p class="slide-1-Rent">400$ /Day
+                                    <p class="slide-1-Rent">125$ <span class="slide1-rent-span">/Day</span>
                                     </p>
-                                    <ul>
-                                        <li>Size: 30 ft</li>
-                                        <li>Capacity:Max persion 5</li>
-                                        <li>Bed:King Beds</li>
-                                        <li>Services:Wifi, Television, Bathroom</li>
-                                    </ul>
+                                    <div class="slide-1-DetailsText">
+                                        <ul>
+                                            <li>Size</li>
+                                            <li>Capacity</li>
+                                            <li>Bed</li>
+                                            <li>Services</li>
+                                        </ul>
+                                        <ul>
+                                            <li>:30 ft</li>
+                                            <li>:Max person 5</li>
+                                            <li>:King Beds</li>
+                                            <li>:Wifi, Television, Bathroom</li>
+                                        </ul>
+                                    </div>
                                     <div class="slide-1-viewDetails">
                                         <p>View Details</p>
                                     </div>
@@ -216,15 +230,22 @@
                                 <div class="slide-1-Details">
                                     <p class="slide-1-DetailsTitle">Premium King
                                         Room</p>
-                                    <p class="slide-1-Rent">400$ <span
-                                            style="color: white; font-size: 12px;">/Day</span>
+                                    <p class="slide-1-Rent">400$ <span class="slide1-rent-span">/Day</span>
                                     </p>
-                                    <ul>
-                                        <li>Size: 30 ft</li>
-                                        <li>Capacity:Max persion 5</li>
-                                        <li>Bed:King Beds</li>
-                                        <li>Services:Wifi, Television, Bathroom</li>
-                                    </ul>
+                                    <div class="slide-1-DetailsText">
+                                        <ul>
+                                            <li>Size</li>
+                                            <li>Capacity</li>
+                                            <li>Bed</li>
+                                            <li>Services</li>
+                                        </ul>
+                                        <ul>
+                                            <li>:30 ft</li>
+                                            <li>:Max person 5</li>
+                                            <li>:King Beds</li>
+                                            <li>:Wifi, Television, Bathroom</li>
+                                        </ul>
+                                    </div>
                                     <div class="slide-1-viewDetails">
                                         <p>View Details</p>
                                     </div>
@@ -237,9 +258,13 @@
         </div>
         <!-- Testimonials -->
         <div class="testimonialsContainer">
-            <div class="imgSec">
-                <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x10.jpg.pagespeed.ic.uN1zhqtKCD.webp"
-                    alt="">
+            <div class="imgSecView">
+                <div class="imgSec">
+                    <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x10.jpg.pagespeed.ic.uN1zhqtKCD.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x11.jpg.pagespeed.ic.NKeQ5fNiwX.webp"
+                        alt="">
+                </div>
             </div>
             <div class="testimonialsMessageView">
                 <div class="testimonialsHeaderView">
@@ -271,15 +296,10 @@
         <!-- //////////////////////////// -->
         <!-- Gallery -->
         <div class="galleryContainer">
-            <!-- <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x6.jpg.pagespeed.ic.-HFJcpiaDg.webp" alt=""> -->
-            <!-- <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x7.jpg.pagespeed.ic.VOLLmiKdcj.webp" alt=""> -->
-            <!-- <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x8.jpg.pagespeed.ic.hBR-a9XJuc.webp" alt=""> -->
-
             <div class="galleryDescContainer">
-
                 <div class="q">
                     <div class="galleryDescSubContainer">
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x6.jpg.pagespeed.ic.-HFJcpiaDg.webp"
+                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x8.jpg.pagespeed.ic.hBR-a9XJuc.webp"
                             alt="">
 
                         <div class="galleryDetails">
@@ -321,7 +341,33 @@
 
                 <div class="q">
                     <div class="galleryDescSubContainer">
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x6.jpg.pagespeed.ic.-HFJcpiaDg.webp"
+                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x5.jpg.pagespeed.ic.3SoamdZVQ0.webp"
+                            alt="">
+
+
+                        <div class="galleryDetails">
+
+                            <p class="galleryTitle">
+                                Entertainment</p>
+                            <p class="gallerySubTitle">
+                                Racing Bike</p>
+                        </div>
+                    </div>
+                    <!-- <div class="onhoverSec">
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                        <h1>sdd</h1>
+                    </div> -->
+                </div>
+
+                <div class="q">
+                    <div class="galleryDescSubContainer">
+                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x2.jpg.pagespeed.ic.JU08yIWWp6.webp"
                             alt="">
 
 
@@ -373,33 +419,7 @@
 
                 <div class="q">
                     <div class="galleryDescSubContainer">
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x6.jpg.pagespeed.ic.-HFJcpiaDg.webp"
-                            alt="">
-
-
-                        <div class="galleryDetails">
-
-                            <p class="galleryTitle">
-                                Entertainment</p>
-                            <p class="gallerySubTitle">
-                                Racing Bike</p>
-                        </div>
-                    </div>
-                    <!-- <div class="onhoverSec">
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                        <h1>sdd</h1>
-                    </div> -->
-                </div>
-
-                <div class="q">
-                    <div class="galleryDescSubContainer">
-                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x6.jpg.pagespeed.ic.-HFJcpiaDg.webp"
+                        <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x15.jpg.pagespeed.ic.oqkgdxQkRv.webp"
                             alt="">
 
 
