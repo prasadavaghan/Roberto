@@ -325,6 +325,7 @@ body {
 
 .navbar>#nav>li {
     list-style: none;
+    background-color: white;
 }
 
 .navbar>#nav>li>a {
@@ -381,6 +382,7 @@ body {
     border-bottom: 1px solid rgba(242, 244, 248, 0.7);
     list-style: none;
     box-sizing: border-box;
+    background-color: white;
 }
 
 .dropdown>li>a {
@@ -653,6 +655,7 @@ body {
         height: 50px;
         border-radius: 30px;
         margin-left: 1rem;
+        margin-bottom: 160px;
     }
 
     .book-now-btn>a {
@@ -729,6 +732,7 @@ body {
 
     .dropdown>li {
         height: 0px;
+        background-color: transparent;
     }
 
     .open .dropdown>li {
