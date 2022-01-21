@@ -16,3 +16,29 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
     })
 })
+
+// animation
+
+// document.addEventListener("DOMContentLoaded", scrollAnim);
+
+// window.addEventListener('scroll', scrollAnim)
+
+window.addEventListener('scroll', () => {
+    let content = document.querySelector('.aboutUsTextDetails');
+    let contentPosition = content.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+    if (contentPosition < screenPosition / 1.2) {
+        content.classList.add('active')
+    }
+})
+
+window.addEventListener('scroll', () => {
+    let contents = document.querySelector('.aboutUsThumbnailImages');
+    let contentPositions = content.getBoundingClientRect().top;
+    let screenPositions = window.innerHeight;
+    if (contentPositions < - screenPositions / 0.6) {
+        contents.classList.add('actives')
+    }
+})
+
+// aboutUsThumbnailsView
