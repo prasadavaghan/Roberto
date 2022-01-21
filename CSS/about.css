@@ -79,3 +79,53 @@
 
 /** Parallax 2 **/
 
+
+
+
+/*!--------------------------------------*/
+
+/** Media Queries **/
+
+@media only screen and (max-width: 1199px) {
+    .about-content-heading h2 {
+        font-size: 36px;
+    }
+    .about-content-container {
+        padding-right: 0px;
+    }
+    .about-thumbnail {
+        padding-top: 30px;
+    }
+    .about-thumbnail img {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about-us-container .cont {
+        flex-direction: column;
+    }
+    .about-thumbnail-container {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .about-thumbnail {
+        padding: 0px;
+        /* margin: 0px; */
+    }
+
+    .about-content-container {
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .about-content-heading h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-content-heading h2 {
+        font-size: 24px;
+    }
+}
