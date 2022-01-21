@@ -92,8 +92,8 @@ selected2.addEventListener("blur", () => {
 });
 //!------//---------class_remover-------//------//
 
-let doc = document.body;
-doc.addEventListener("click", (e) => {
+let docu = document.body;
+docu.addEventListener("click", (e) => {
   // console.log(e.target);
   //? --------------------Guest count list-------------------------------
   let adultTarget = e.target.classList.contains("guest-adult");
