@@ -86,3 +86,13 @@ let drop2 = () => {
 
 trigger1.addEventListener("click", drop1)
 trigger2.addEventListener("click", drop2)
+
+
+//!----------------------------------------------------------------------------
+//* logo link
+
+let logo = header.querySelector("#logo");
+
+logo.addEventListener("click", ()=>{
+    location.href = "index.html";
+})
