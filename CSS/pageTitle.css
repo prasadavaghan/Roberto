@@ -78,6 +78,7 @@
     overflow: hidden;
     pointer-events: none;
     z-index: -100;
+    clip: rect(0, 1903px, 300px, 0);
 }
 
 .bg-img {

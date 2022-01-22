@@ -1,3 +1,8 @@
+/** Font Family **/
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700);
+
+
 /** About Us Section**/
 
 /** Testimonials Section **/
@@ -22,7 +27,7 @@
     margin-bottom: 93px;
 }
 
-.about-thumbnail img{
+.about-thumbnail img {
     border-radius: 6px;
     width: 100%;
     height: 363px;
@@ -79,6 +84,11 @@
 
 /** Parallax 2 **/
 
+.about-video-container .background {
+    z-index: -96;
+    clip: rect(0, 1903px, 481.1875px, 0);
+}
+
 .bg-img-2 {
     background-position: 50% 50%;
     background-size: cover;
@@ -92,9 +102,9 @@
     height: 665.594px;
     overflow: hidden;
     pointer-events: none;
-    margin-top: 92.2031px;
+    margin-top: 113.90621px;
     transition-duration: 0ms;
-    transform: translate3d(0px, 426px, 0px);
+    /* transform: translate3d(0px, 426px, 0px); */
 }
 
 .about-video-container {
@@ -109,11 +119,11 @@
     height: 100%;
 }
 
-.about-video-container>.container h2{
+.about-video-container>.container h2 {
     color: white;
 }
 
-.about-video-container>.container h6{
+.about-video-container>.container h6 {
     color: white;
 }
 
@@ -159,34 +169,144 @@
 }
 
 
+/** Services Section **/
+
+.service-container {
+    background-color: white;
+    padding-top: 100px;
+}
+
+.service-container>.container {
+    display: block;
+    height: auto;
+}
+
+
+.service-container .about-content-heading {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    /* outline: 1px solid red; */
+}
+
+.service-card-container {
+    display: flex;
+    /* outline: 1px solid red; */
+    gap: 30px;
+    row-gap: 0px;
+    /* justify-content: space-between; */
+    /* padding-bottom: 100px; */
+}
+
+.service-card {
+    /* outline: 1px solid red; */
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1/1;
+    margin-bottom: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    box-shadow: 0 2px 14px 5px rgb(20 20 20 / 5%);
+    border-radius: 3px;
+}
+
+.service-card:hover .service-title{
+    background-color: rgba(42,48,59,1);
+}
+
+.service-img {
+    position: absolute;
+    z-index: 0;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.service-img-1 {
+    background: url("../Resources/service-card-1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-img-2 {
+    background: url("../Resources/service-card-2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-img-3 {
+    background: url("../Resources/service-card-3.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-title {
+    /* outline: 1px solid red; */
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(42,48,59,.5);
+    color: white;
+}
+
+.service-title h5 {
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
 
 /*!--------------------------------------*/
 
 /** Media Queries **/
 
 @media only screen and (max-width: 1199px) {
+    .about-video-container>.container>.item-center {
+        height: 173.98px;
+    }
+
     .about-content-heading h2 {
         font-size: 36px;
     }
+
     .about-content-container {
         padding-right: 0px;
     }
+
     .about-thumbnail {
         padding-top: 30px;
     }
+
     .about-thumbnail img {
+        height: auto;
+    }
+
+    .service-card {
+        width: 289.98px;
         height: auto;
     }
 }
 
 @media only screen and (max-width: 991px) {
+    .about-video-container>.container>.item-center {
+        height: 166.8px;
+    }
+
     .about-us-container .cont {
         flex-direction: column;
     }
+
     .about-thumbnail-container {
         max-width: 100%;
         padding: 0px;
     }
+
     .about-thumbnail {
         padding: 0px;
         /* margin: 0px; */
@@ -197,13 +317,47 @@
         padding: 0px;
     }
 
-    .about-content-heading h2{
+    .about-content-heading h2 {
         font-size: 30px;
+    }
+
+    .service-card-container {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        width: 330px;
+        
     }
 }
 
 @media only screen and (max-width: 767px) {
+    .about-video-container>.container>.item-center {
+        height: 159.59px;
+    }
+
     .about-content-heading h2 {
         font-size: 24px;
+    }
+
+    .video-play-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+    .service-card {
+        width: 510px;
+
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .service-card {
+        width: 100%;
+        height: auto;
     }
 }
