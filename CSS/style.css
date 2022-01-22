@@ -814,7 +814,7 @@ margin: 0 3px 0 3px;
 
 .q:hover > .onhoverSec{
    opacity: 1;
-   transform: translateY(0px);
+   transform: translateY(0%);
   }
   
   .onhoverSec{
@@ -822,7 +822,7 @@ margin: 0 3px 0 3px;
     bottom: 0;
     background-color: red;
     height: 35%;
-    transform: translateY(270px);
+    transform: translateY(100%);
     width: 100%;
     transition: 1s;
 }
