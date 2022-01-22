@@ -560,6 +560,7 @@ body {
     height: auto;
     margin:  auto;
     display: flex;
+    background-color: white;
 }
 #data-container .datDiv1{
     width: 85%;
@@ -1459,6 +1460,46 @@ body{
 #contact .btnDiv{
     margin-left: 10%;
 }
+
+
+/*!-------------------------------------------------------------------*/
+
+
+/** Code for page title section **/
+
+.bg-img {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Resources/blog-bg.webp);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* width: 1880px; */
+    height: 575px;
+    overflow: hidden;
+    pointer-events: none;
+    margin-top: 137.5px;
+    transform: translate3d(0px, -51.25px, 0px);
+}
+
+@media only screen and (max-width: 1880px) {
+    .bg-img {
+        transform: translate3d(0px, -72.5px, 0px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .background {
+        clip: rect(0, 1903px, 200px, 0);
+    }
+}
+
+
+
+/*!-------------------------------------------------------------------*/
+
+
 @media only screen and ( max-width:1250px){
     #contact .over .contactBtn{
     width: 160px;

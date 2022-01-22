@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <link rel="stylesheet" href="news.css">
-
+    <link rel="stylesheet" href="../CSS/navigation.css">
+    <link rel="stylesheet" href="../CSS/pageTitle.css">
     <link rel="stylesheet" href="../Resources/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../CSS/news.css">
 </head>
 <body>
     <header class="header">
@@ -77,7 +78,11 @@
                                 <li class="active"><a href="./index.html">Home</a></li>
                                 <li><a href="./room.html">Rooms</a></li>
                                 <li><a href="./about.html">About Us</a></li>
-                                <li class="dropdown-cont hover"><a href="#">Pages <img src="../Resources/icons/down-arrow.png" class="arrow" alt=""> <div class="trigger t1"> <img src="../Resources/icons/down-arrow2.png" class="arrow" alt=""> </div> </a>
+                                <li class="dropdown-cont hover"><a href="#">Pages <img
+                                            src="../Resources/icons/down-arrow.png" class="arrow" alt="">
+                                        <div class="trigger t1"> <img src="../Resources/icons/down-arrow2.png"
+                                                class="arrow" alt=""> </div>
+                                    </a>
                                     <ul class="dropdown hover">
                                         <li><a href="./index.html">- Home</a></li>
                                         <li><a href="./room.html">- Rooms</a></li>
@@ -86,7 +91,11 @@
                                         <li><a href="./blog.html">- Blog</a></li>
                                         <li><a href="./single-blog.html">- Single Blog</a></li>
                                         <li><a href="./contact.html">- Contact</a></li>
-                                        <li class="dropdown-cont hover"><a href="#">- Dropdown <img src="../Resources/icons/down-arrow.svg" class="arrow" alt=""> <div class="trigger t2"> <img src="../Resources/icons/down-arrow2.png" class="arrow" alt=""> </div> </a>
+                                        <li class="dropdown-cont hover"><a href="#">- Dropdown <img
+                                                    src="../Resources/icons/down-arrow.svg" class="arrow" alt="">
+                                                <div class="trigger t2"> <img src="../Resources/icons/down-arrow2.png"
+                                                        class="arrow" alt=""> </div>
+                                            </a>
                                             <ul class="dropdown hover">
                                                 <li><a href="#">- Dropdown Item</a></li>
                                                 <li><a href="#">- Dropdown Item</a></li>
@@ -123,22 +132,25 @@
                 </div>
             </div>
         </div>
-
-        <div class="height-check"></div>
     </header>
-    <section id="first">
-        <div class="imageContent">
-            <div class="img">
-                <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/x17.jpg.pagespeed.ic.VLlN5b3v5F.webp">
-            </div>
-            <div class="content" >
-                <div class="cInside">
-                    <h2 >Blog Left Sidebar</h2>
-                    <p>Home > Blog Left Sidebar</p>
+    <section>
+        <div class="page-title-container">
+            <div class="container">
+                <div class="item-center">
+                    <h2 class="page-title">Blog Left Sidebar</h2>
+                    <nav>
+                        <ol class="bread">
+                            <li class="bread-item"><a href="index.html">Home</a></li>
+                            <li class="bread-item">Blog Left Sidebar</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
+            <div class="background">
+                <div class="bg-img" id="parallax1"></div>
+                <div class="bg-overlay"></div>
+            </div>
         </div>
-
     </section>
     <div id="data-container">
         <div class="datDiv1">
@@ -367,7 +379,8 @@
 
         </section>
         </footer>
-    <script src="../JS/script.js"></script>
+    <script src="../JS/navigation.js"></script>
+    <script src="../JS/pageTitle.js"></script>
 </body>
 
 </html>
