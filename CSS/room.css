@@ -318,23 +318,24 @@
 }
 
 .rooms-container .selected::after {
-	content: "";
-	background: url("../../image/iconmonstr-arrow-65-16.png");
-	background-size: contain;
-	background-repeat: no-repeat;
+	border-bottom: 2px solid #999;
+	border-right: 2px solid #999;
+	content: '';
+	display: block;
+	margin-top: -4px;
+	pointer-events: none;
 	position: absolute;
-	height: 9px;
-	width: 9px;
-	right: 10px;
-	top: 19px;
-	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-	color: black;
-	transition: all 0.2s;
-	transform-origin: center;
+	right: 12px;
+	top: 50%;
+	transform-origin: 66% 66%;
+	transform: rotate(45deg);
+	transition: all 0.15s ease-in-out;
+	width: 3px;
+	height: 3px;
 }
 
 .rooms-container .select-box .option-container.active+.selected::after {
-	transform: rotate(-180deg);
+	transform: rotate(-135deg);
 	/* top: -19px; */
 }
 
@@ -342,11 +343,15 @@
 
 
 /* ----------------------------------------------------slider-price-Range--------------- */
+
+.rooms-container .slider * {
+	transition-duration: 0ms;
+}
 .rooms-container .price-tag {
 	font-size: 18px;
 	display: block;
 	margin-bottom: 15px;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 .rooms-container .slider-box {
@@ -408,12 +413,12 @@
 }
 
 .rooms-container .slider>.thumb.left {
-	transform: translate(-8px, -7px);
+	transform: translate(-10px, -7px);
 	z-index: 4;
 }
 
 .rooms-container .slider>.thumb.right {
-	transform: translate(8px, -7px);
+	transform: translate(12px, -7px);
 	z-index: 4;
 }
 
@@ -493,6 +498,10 @@
 		margin-top: 100px;
 
 		grid-column: 1 / span 3;
+	}
+
+	.rooms-container input[type="range"] {
+		width: 103%;
 	}
 }
 

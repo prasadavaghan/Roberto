@@ -11,7 +11,7 @@ function setLeftValue() {
     min = parseInt(_this.min);
   max = parseInt(_this.max);
 
-  _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 2);
+  _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 0);
   let percent = ((_this.value - min) / (max - min)) * 100;
   thumbLeft.style.left = percent + "%";
   range.style.left = percent + "%";
@@ -23,7 +23,7 @@ function setRightValue() {
     min = parseInt(_this.min);
   max = parseInt(_this.max);
 
-  _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 2);
+  _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 0);
   let percent = ((_this.value - min) / (max - min)) * 100;
   thumbRight.style.right = 100 - percent + "%";
   range.style.right = 100 - percent + "%";
