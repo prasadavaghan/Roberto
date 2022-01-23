@@ -43,18 +43,18 @@ window.addEventListener('scroll', () => {
 
 // aboutUsThumbnailsView
 
-const reveal = document.querySelectorAll('.reveal');
+// const reveal = document.querySelectorAll('.reveal');
 
-const scrollAnim = () => {
-    let windowht = window.innerHeight;
-    reveal.forEach(el => {
-        let elpos = el.getBoundingClientRect().top;
-        if (elpos < - windowht / 1) {
-            el.classList.add('animate')
-        }
-    })
-}
+// const scrollAnim = () => {
+//     let windowht = window.innerHeight;
+//     reveal.forEach(el => {
+//         let elpos = el.getBoundingClientRect().top;
+//         if (elpos < - windowht / 1) {
+//             el.classList.add('animate')
+//         }
+//     })
+// }
 
-document.addEventListener("DOMContentLoaded", scrollAnim)
+// document.addEventListener("DOMContentLoaded", scrollAnim)
 
-window.addEventListener("scroll", scrollAnim)
+// window.addEventListener("scroll", scrollAnim)
