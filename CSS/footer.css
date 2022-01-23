@@ -395,10 +395,24 @@ footer{
     width: 60%;
     }
 }
-@media only screen and ( max-width:575px){
+@media only screen and ( max-width:670px){
+    footer{
+        position: relative;
+        top: 700px;
+        /* margin-top: 30%; */
+    }
+}
+@media only screen and ( max-width:610px){
     footer{
         position: relative;
         top: 500px;
+        /* margin-top: 30%; */
+    }
+}
+@media only screen and ( max-width:575px){
+    footer{
+        position: relative;
+        top: 1000px;
         /* margin-top: 30%; */
     }
     #contact > img{
@@ -427,3 +441,29 @@ footer{
         width: 80%;
         }
 }
+@media only screen and ( max-width:540px){
+    footer{
+        position: relative;
+        top: 850px;
+    }
+}
+@media only screen and ( max-width:510px){
+    footer{
+        position: relative;
+        top: 750px;
+    }
+}
+@media only screen and ( max-width:450px){
+    footer{
+        position: relative;
+        top: 550px;
+    }
+}
+@media only screen and ( max-width:390px){
+    footer{
+        position: relative;
+        top: 400px;
+    }
+}
+
+
