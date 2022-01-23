@@ -1194,6 +1194,10 @@ body {
     #data-container .dataDiv2 .RecentN .contains .daDiv{
         margin-left: 10px;
     }
+    #data-container .dataDiv2 .insta{
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (max-width: 575px){
@@ -1338,6 +1342,9 @@ body{
     list-style-type: none;
     position: relative;
     color: grey;
+}
+#footer #contain .grey a{
+    text-decoration: none;
 }
 #footer #contain .grey li:hover{
     color: white;

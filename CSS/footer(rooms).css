@@ -39,7 +39,7 @@ body{
 }
 footer{
     position: relative;
-    top: 100px;
+    top: 0px;
 
 }
 #footer{
@@ -229,6 +229,11 @@ footer{
     margin-left: 10%;
 }
 @media only screen and ( max-width:1250px){
+    footer{
+        position: relative;
+        top: 200px;
+        /* margin-top: 900px; */
+    }
     #contact .over .contactBtn{
     width: 160px;
     height: 35px;
@@ -245,7 +250,7 @@ footer{
 @media only screen and ( max-width:1119px) {
     footer{
         position: relative;
-        top: 100px;
+        top: 200px;
 
     }
     #footer{
@@ -312,21 +317,21 @@ footer{
 @media only screen and ( max-width:991px){
     footer{
         position: relative;
-        top: 400px;
+        top: 500px;
         /* margin-top: 400px; */
     }
 }
 @media only screen and ( max-width:767px){
     footer{
         position: relative;
-        top: 1000px;
-        margin-top: 400px;
+        top: 2300px;
+        /* margin-top: 400px; */
     }
 }
 @media only screen and ( max-width:750px){
     footer{
         position: relative;
-        top: 1000px;
+        top: 2300px;
         /* margin-top: 30%; */
     }
     #footer #contain{
@@ -398,7 +403,7 @@ footer{
 @media only screen and ( max-width:575px){
     footer{
         position: relative;
-        top: 500px;
+        top: 2400px;
         /* margin-top: 30%; */
     }
     #contact > img{
@@ -427,3 +432,29 @@ footer{
         width: 80%;
         }
 }
+@media only screen and ( max-width:540px){
+    footer{
+        position: relative;
+        top: 2300px;
+    }
+}
+@media only screen and ( max-width:510px){
+    footer{
+        position: relative;
+        top: 2100px;
+    }
+}
+@media only screen and ( max-width:450px){
+    footer{
+        position: relative;
+        top: 1900px;
+    }
+}
+@media only screen and ( max-width:390px){
+    footer{
+        position: relative;
+        top: 1750px;
+    }
+}
+
+
