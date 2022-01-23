@@ -5,7 +5,7 @@
   }
   
   .avail-main-container{
-    bottom: -13rem;
+    bottom: -21rem;
   }
 
   .avail-box{
@@ -125,7 +125,7 @@
     }
 
     .avail-main-container{
-      bottom: -13rem;
+      bottom: -20rem;
     }
 
     .avail-box{
@@ -304,7 +304,7 @@
 
   .avail-main-container{
     height: 350px;  
-    bottom: -18rem;
+    bottom: -26rem;
   }
   
   .avail-box{
@@ -369,7 +369,7 @@
  .sec-carousel{
    position: relative;
    width: 100%; 
-   height: 45rem; 
+   height: 50rem; 
    background-color: #0e2737;
  }
  
@@ -399,7 +399,8 @@
    display: flex; 
    flex-direction: column; 
    justify-content: flex-end; 
-   padding: 10px 0px 10px 10px 
+   padding: 10px 0px 10px 10px;
+   margin-top: 30px; 
  }
  
  .slide-1-DetailsTitle{
@@ -535,7 +536,7 @@
   .avail-main-container{
 
     height: 350px;  
-    bottom: -18rem;
+    bottom: -25rem;
   }
   
   .avail-box{
@@ -588,8 +589,13 @@
     }
 
     .sec-carousel{
-      height: 38rem; 
+      height: 45rem; 
     }
+
+    .slide-1-Details{
+      margin: 60px 0px; 
+    }
+
 
     .testimonialsContainer{
       margin: 70px 10px; 
@@ -631,7 +637,7 @@
    margin-bottom: 50px;
    overflow: hidden;
    /* position: absolute; */
-   bottom: -20rem;
+   bottom: -29rem;
   }
   
   .check-inputs{
@@ -650,6 +656,10 @@
 
   .avail-button{
     width: 100%;
+  }
+
+  .sec-carousel{
+    height: 40rem; 
   }
  
 }
