@@ -1,27 +1,48 @@
 <h1 align="center">Welcome to Roberto 👋</h1>
 
-```
-Template for hotel portfolio using vanilla HTML, CSS, and JavaScript
-```
+Project <strong>Roberto</strong> is a portfolio template for a luxury hotel group, where users can browse and book rooms in luxury hotels all around the globe.
 
-### by Abhishek, Prasad and Shubham
+In this project we have tried to clone the front end of <strong>Roberto</strong>. With our efforts and the technology stack, that we have learned so far in the masai school, we were able to clone the front end with high precision and quality.
 
 <br/>
-
 
 - This is a basic template for a Hotel group portfolio
 - and it was made in 1 week.
 - The technologies used are beginner friendly and easy to use.
 - If you are interested in contributing to this project feel free to do so.
 
-### 🏠 [Homepage](./Resources/portfolio2.jpg)
+<br/>
 
-### ✨ [Demo](https://roberto-hotel.herokuapp.com/)
+# Dependencies and Tech stack used 💻
 
-## Install
+1. [HTML](https://html.com/)
+1. [CSS](https://www.w3schools.com/css/)
+1. [JavaScript](https://www.javascript.com/)
+1. [Font Awesome icons library](https://fontawesome.com/)
+1. [Elegant icons library](https://www.elegantthemes.com/blog/resources/elegant-icon-font)
 
-```sh
-no installations required
+### 🏠 [Homepage](https://roberto-hotel.herokuapp.com/)
+
+<br/>
+
+# Features ✨
+
+1. Multiple types of carousels
+1. Smooth animations
+1. Customized range selector
+1. Multiple paralax effects
+1. Responsive design
+
+<br/>
+
+# How to run the project 📑
+
+### After cloning the project from https://github.com/PA-iscar/Roberto.git
+
+## Install using
+
+```
+no installations required all the requirements are included in the repository
 ```
 
 ## Usage
@@ -30,42 +51,53 @@ no installations required
 just clone it and start using
 ```
 
-## Dependencies and Tech stack used
+   <br/>
+   <br/>
 
-1. HTML
-1. CSS
-1. JavaScript
-1. Font Awesome icons library
-1. Elegant icons library
-   <br/>
-   <br/>
-# Home
+# Highlights 📷
+
+## Home
+
 <img src="./Resources/portfolio2.jpg">
 
-# Rooms
+## Rooms
+
 <img src="./Resources/robertoRooms.jpg">
 
-# Testimonials
+## Testimonials
+
 <img src="./Resources/robertoTestimonials.jpg">
 
-# Contactus
+## Contactus
+
 <img src="./Resources/robertoContactus.jpg">
 
 ---
 
 <br/>
 
-## My Portfolio
+## Authors
 
 👤 **Abhishek**
 
-- Website: [abhi-aro.tech](https://abhi-aro.tech/)
-- Twitter: [@Prog_Anon](https://twitter.com/Prog_Anon)
+- Website: [Portfolio](https://abhi-aro.tech/)
 - Github: [@PA-iscar](https://github.com/PA-iscar)
 - LinkedIn: [@abhi-aro](https://linkedin.com/in/abhi-aro)
 
+👤 **Shubham Gadge**
+
+- Website: [Portfolio](https://portfolio-shubham-gadge.herokuapp.com/)
+- Github: [@shubham-955](https://github.com/shubham-955)
+- LinkedIn: [@shubham-gadge-aa6b3417b](https://www.linkedin.com/in/shubham-gadge-aa6b3417b/)
+
+👤 **Prasad Avaghan**
+
+- Website: [Portfolio](https://prasadavaghan-portfolio.netlify.app/)
+- Github: [@prasadavaghan](https://github.com/prasadavaghan)
+- LinkedIn: [@prasad-avaghan-ab17101b0](https://www.linkedin.com/in/prasad-avaghan-ab17101b0/)
+
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if you liked this project!
 
 ---
