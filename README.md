@@ -21,7 +21,7 @@ In this project we have tried to clone the front end of <strong>Roberto</strong>
 1. [Font Awesome icons library](https://fontawesome.com/)
 1. [Elegant icons library](https://www.elegantthemes.com/blog/resources/elegant-icon-font)
 
-### 🏠 [Homepage](https://roberto-hotel.herokuapp.com/)
+### 🏠 [Homepage](https://roberto-deployed.vercel.app/)
 
 <br/>
 
